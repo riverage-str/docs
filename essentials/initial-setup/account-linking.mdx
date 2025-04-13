@@ -1,0 +1,178 @@
+---
+title: アカウント連携
+description: 各種SNSアカウントとの連携設定方法を説明します。
+---
+
+# アカウント連携
+
+各種 SNS アカウントとの連携設定を行います。連携したアカウントは投稿の作成や管理に使用できます。
+
+<div className="my-8">
+  <img
+    src="/images/initial-setup/account-linking-flow.png"
+    alt="アカウント連携の流れ"
+    className="rounded-lg shadow-md"
+  />
+</div>
+
+## 対応プラットフォーム
+
+<div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
+  <div className="bg-white p-6 rounded-lg shadow-md text-center">
+    <img src="/images/initial-setup/x-icon.svg" alt="Xアイコン" className="w-12 h-12 mx-auto mb-4" />
+    <h3 className="text-lg font-semibold mb-2">X</h3>
+    <p className="text-sm text-gray-600">ツイートの投稿・管理</p>
+  </div>
+
+{" "}
+<div className="bg-white p-6 rounded-lg shadow-md text-center">
+  <img
+    src="/images/initial-setup/instagram-icon.svg"
+    alt="Instagramアイコン"
+    className="w-12 h-12 mx-auto mb-4"
+  />
+  <h3 className="text-lg font-semibold mb-2">Instagram</h3>
+  <p className="text-sm text-gray-600">投稿・ストーリーの管理</p>
+</div>
+
+{" "}
+<div className="bg-white p-6 rounded-lg shadow-md text-center">
+  <img
+    src="/images/initial-setup/youtube-icon.svg"
+    alt="YouTubeアイコン"
+    className="w-12 h-12 mx-auto mb-4"
+  />
+  <h3 className="text-lg font-semibold mb-2">YouTube</h3>
+  <p className="text-sm text-gray-600">動画の投稿・管理</p>
+</div>
+
+  <div className="bg-white p-6 rounded-lg shadow-md text-center">
+    <img src="/images/initial-setup/tiktok-icon.svg" alt="TikTokアイコン" className="w-12 h-12 mx-auto mb-4" />
+    <h3 className="text-lg font-semibold mb-2">TikTok</h3>
+    <p className="text-sm text-gray-600">動画の投稿・管理</p>
+  </div>
+</div>
+
+## 連携手順
+
+<div className="bg-gray-50 p-6 rounded-lg my-4">
+  <div className="flex items-center mb-4">
+    <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center mr-4">
+      1
+    </div>
+    <h3 className="text-lg font-semibold">アカウントの選択</h3>
+  </div>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <div className="bg-white p-4 rounded-lg shadow-sm">
+        <h4 className="font-medium mb-2">連携手順</h4>
+        <ul className="text-sm text-gray-600 space-y-2">
+          <li>📱 連携したいSNSプラットフォームを選択</li>
+          <li>🔑 アカウント情報を入力</li>
+          <li>✅ 権限の確認と承認</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <img
+        src="/images/initial-setup/account-selection-demo.png"
+        alt="アカウント選択のデモ"
+        className="rounded-lg shadow-sm"
+      />
+    </div>
+  </div>
+</div>
+
+<div className="bg-gray-50 p-6 rounded-lg my-4">
+  <div className="flex items-center mb-4">
+    <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center mr-4">
+      2
+    </div>
+    <h3 className="text-lg font-semibold">権限の設定</h3>
+  </div>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <div className="bg-white p-4 rounded-lg shadow-sm">
+        <h4 className="font-medium mb-2">設定可能な権限</h4>
+        <ul className="text-sm text-gray-600 space-y-2">
+          <li>📝 投稿の作成・編集</li>
+          <li>🗑️ 投稿の削除</li>
+          <li>📊 分析データの取得</li>
+          <li>👥 フォロワー情報の取得</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <img
+        src="/images/initial-setup/permission-setting-demo.png"
+        alt="権限設定のデモ"
+        className="rounded-lg shadow-sm"
+      />
+    </div>
+  </div>
+</div>
+
+<div className="bg-gray-50 p-6 rounded-lg my-4">
+  <div className="flex items-center mb-4">
+    <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center mr-4">
+      3
+    </div>
+    <h3 className="text-lg font-semibold">連携の確認</h3>
+  </div>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <div className="bg-white p-4 rounded-lg shadow-sm">
+        <h4 className="font-medium mb-2">確認項目</h4>
+        <ul className="text-sm text-gray-600 space-y-2">
+          <li>✅ アカウント情報の確認</li>
+          <li>🔒 権限設定の確認</li>
+          <li>📱 投稿テストの実行</li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <img
+        src="/images/initial-setup/verification-demo.png"
+        alt="連携確認のデモ"
+        className="rounded-lg shadow-sm"
+      />
+    </div>
+  </div>
+</div>
+
+## 注意事項
+
+<div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-8">
+  <div className="flex">
+    <div className="flex-shrink-0">
+      <svg
+        className="h-5 w-5 text-yellow-400"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fillRule="evenodd"
+          d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+          clipRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div className="ml-3">
+      <h3 className="text-sm font-medium text-yellow-800">注意事項</h3>
+      <div className="mt-2 text-sm text-yellow-700">
+        <ul className="list-disc pl-5 space-y-1">
+          <li>
+            アカウント連携には各SNSプラットフォームのアカウント情報が必要です
+          </li>
+          <li>権限設定は必要最小限に設定することをお勧めします</li>
+          <li>
+            アカウント情報は安全に管理され、第三者に共有されることはありません
+          </li>
+          <li>
+            連携を解除する場合は、各SNSプラットフォームの設定からも解除する必要があります
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

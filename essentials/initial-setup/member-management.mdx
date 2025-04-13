@@ -1,0 +1,224 @@
+---
+title: メンバー管理
+description: チームメンバーの招待、権限設定、管理方法について説明します。
+---
+
+# メンバー管理
+
+チームメンバーの招待と権限設定を行います。効率的なチーム運営のために、適切な権限設定が重要です。
+
+<div className="my-8">
+  <img
+    src="/images/initial-setup/member-management-flow.png"
+    alt="メンバー管理の流れ"
+    className="rounded-lg shadow-md"
+  />
+</div>
+
+## メンバーの招待
+
+### 招待方法
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+  <div className="bg-white p-6 rounded-lg shadow-md">
+    <h4 className="font-semibold mb-4">📧 メール招待</h4>
+    <ul className="space-y-2 text-sm text-gray-600">
+      <li>メールアドレスを入力</li>
+      <li>権限レベルを選択</li>
+      <li>招待メッセージを編集（任意）</li>
+      <li>招待を送信</li>
+    </ul>
+  </div>
+  <div className="bg-white p-6 rounded-lg shadow-md">
+    <h4 className="font-semibold mb-4">🔗 招待リンク</h4>
+    <ul className="space-y-2 text-sm text-gray-600">
+      <li>招待リンクを生成</li>
+      <li>有効期限を設定</li>
+      <li>使用回数を制限（任意）</li>
+      <li>リンクを共有</li>
+    </ul>
+  </div>
+  <div className="bg-white p-6 rounded-lg shadow-md">
+    <h4 className="font-semibold mb-4">👥 既存メンバーから</h4>
+    <ul className="space-y-2 text-sm text-gray-600">
+      <li>メンバーリストから選択</li>
+      <li>組織内の他メンバーを招待</li>
+      <li>一括招待も可能</li>
+    </ul>
+  </div>
+</div>
+
+### 招待の管理
+
+<div className="bg-white p-6 rounded-lg shadow-md my-4">
+  <h4 className="font-semibold mb-4">招待状況の確認</h4>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <ul className="space-y-2">
+      <li>📬 保留中の招待を表示</li>
+      <li>🔄 招待の再送信</li>
+      <li>❌ 招待のキャンセル</li>
+      <li>📊 招待の使用状況</li>
+    </ul>
+    <div>
+      <img
+        src="/images/initial-setup/invitation-management-demo.png"
+        alt="招待管理のデモ"
+        className="rounded-lg shadow-sm"
+      />
+    </div>
+  </div>
+</div>
+
+## 権限設定
+
+### 権限レベル
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-4">
+  <div className="bg-white p-6 rounded-lg shadow-md">
+    <h4 className="font-semibold mb-4">👑 管理者</h4>
+    <ul className="space-y-2 text-sm text-gray-600">
+      <li>すべての機能にアクセス可能</li>
+      <li>メンバー管理</li>
+      <li>プロジェクト設定の変更</li>
+      <li>投稿の承認</li>
+      <li>分析データの閲覧</li>
+    </ul>
+  </div>
+  <div className="bg-white p-6 rounded-lg shadow-md">
+    <h4 className="font-semibold mb-4">✍️ 編集者</h4>
+    <ul className="space-y-2 text-sm text-gray-600">
+      <li>投稿の作成・編集</li>
+      <li>ドラフトの保存</li>
+      <li>メディアの管理</li>
+      <li>基本的な分析の閲覧</li>
+    </ul>
+  </div>
+  <div className="bg-white p-6 rounded-lg shadow-md">
+    <h4 className="font-semibold mb-4">👀 閲覧者</h4>
+    <ul className="space-y-2 text-sm text-gray-600">
+      <li>投稿の閲覧</li>
+      <li>コメントの追加</li>
+      <li>基本的な分析の閲覧</li>
+    </ul>
+  </div>
+</div>
+
+### カスタム権限
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+  <div className="bg-white p-6 rounded-lg shadow-md">
+    <h4 className="font-semibold mb-4">設定可能な権限</h4>
+    <ul className="space-y-2">
+      <li>📝 投稿作成権限</li>
+      <li>👍 投稿承認権限</li>
+      <li>📊 分析アクセス権限</li>
+      <li>⚙️ 設定変更権限</li>
+      <li>👥 メンバー管理権限</li>
+    </ul>
+  </div>
+  <div className="bg-white p-6 rounded-lg shadow-md">
+    <h4 className="font-semibold mb-4">アクセス制限</h4>
+    <ul className="space-y-2">
+      <li>🔒 特定のプロジェクトのみ</li>
+      <li>📱 特定のSNSアカウントのみ</li>
+      <li>📊 特定の分析データのみ</li>
+      <li>⏰ 時間帯による制限</li>
+    </ul>
+  </div>
+</div>
+
+## メンバー管理
+
+### メンバーリスト
+
+<div className="bg-white p-6 rounded-lg shadow-md my-4">
+  <h4 className="font-semibold mb-4">メンバー情報の管理</h4>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <ul className="space-y-2">
+      <li>👤 プロフィール情報の確認</li>
+      <li>🔄 権限の変更</li>
+      <li>🚫 アクセスの一時停止</li>
+      <li>❌ メンバーの削除</li>
+    </ul>
+    <div>
+      <img
+        src="/images/initial-setup/member-list-demo.png"
+        alt="メンバーリストのデモ"
+        className="rounded-lg shadow-sm"
+      />
+    </div>
+  </div>
+</div>
+
+### アクティビティ管理
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+  <div className="bg-white p-6 rounded-lg shadow-md">
+    <h4 className="font-semibold mb-4">アクティビティログ</h4>
+    <ul className="space-y-2">
+      <li>📝 投稿作成・編集履歴</li>
+      <li>👍 承認履歴</li>
+      <li>⚙️ 設定変更履歴</li>
+      <li>👥 メンバー管理履歴</li>
+    </ul>
+  </div>
+  <div className="bg-white p-6 rounded-lg shadow-md">
+    <h4 className="font-semibold mb-4">パフォーマンス分析</h4>
+    <ul className="space-y-2">
+      <li>📊 投稿数の推移</li>
+      <li>⭐ エンゲージメント率</li>
+      <li>⏱️ レスポンス時間</li>
+      <li>📈 成果指標の達成度</li>
+    </ul>
+  </div>
+</div>
+
+## 注意事項
+
+<div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-8">
+  <div className="flex">
+    <div className="flex-shrink-0">
+      <svg
+        className="h-5 w-5 text-yellow-400"
+        viewBox="0 0 20 20"
+        fill="currentColor"
+      >
+        <path
+          fillRule="evenodd"
+          d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+          clipRule="evenodd"
+        />
+      </svg>
+    </div>
+    <div className="ml-3">
+      <h3 className="text-sm font-medium text-yellow-800">注意事項</h3>
+      <div className="mt-2 text-sm text-yellow-700">
+        <ul className="list-disc pl-5 space-y-1">
+          <li>管理者権限は必ず2名以上に付与することをお勧めします</li>
+          <li>
+            招待リンクは定期的に更新し、使用回数を制限することをお勧めします
+          </li>
+          <li>権限は必要最小限に設定し、定期的に見直すことをお勧めします</li>
+          <li>重要な操作は監査ログに記録され、後から確認できます</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+## 関連リンク
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+  <a href="/essentials/initial-setup/project-settings" className="block">
+    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+      <h4 className="font-semibold mb-2">⚙️ プロジェクト設定</h4>
+      <p className="text-sm text-gray-600">プロジェクトの基本設定と学習設定</p>
+    </div>
+  </a>
+  <a href="/essentials/initial-setup/account-settings" className="block">
+    <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+      <h4 className="font-semibold mb-2">🔑 アカウント設定</h4>
+      <p className="text-sm text-gray-600">SNSアカウントの設定と連携</p>
+    </div>
+  </a>
+</div>

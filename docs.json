@@ -15,10 +15,25 @@
         "groups": [
           {
             "group": "Get Started",
+            "pages": ["introduction", "quickstart", "development"]
+          },
+          {
+            "group": "初期設定",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
+              "essentials/initial-setup/index",
+              "essentials/initial-setup/project-settings",
+              "essentials/initial-setup/member-management",
+              "essentials/initial-setup/account-settings",
+              "essentials/initial-setup/account-linking"
+            ]
+          },
+          {
+            "group": "投稿作成",
+            "pages": [
+              "essentials/post-creation/index",
+              "essentials/post-creation/image-video-post",
+              "essentials/post-creation/plan-post",
+              "essentials/post-creation/manual-post"
             ]
           },
           {
@@ -39,9 +54,7 @@
         "groups": [
           {
             "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
+            "pages": ["api-reference/introduction"]
           },
           {
             "group": "Endpoint Examples",
